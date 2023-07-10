@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useParams } from '@remix-run/react'
 import { ButtonPrimary, Modal } from '~/components/shared'
 import AddCategoryForm from '~/routes/form/add-category-form'
+import AddPostForm from '~/routes/form/add-post-form'
 
 export function Menu() {
 
@@ -12,7 +13,7 @@ export function Menu() {
   const onOpenClodeModal = () => setShow((prevState) => !prevState)
 
   const addPost = () => {
-    setModalContent(<p>Add post form</p>)
+    setModalContent(<AddPostForm />)
     onOpenClodeModal()
   }
 
