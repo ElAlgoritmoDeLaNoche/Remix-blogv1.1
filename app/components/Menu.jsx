@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from '@remix-run/react'
+import { Link, useParams } from '@remix-run/react'
 import { ButtonPrimary, Modal } from '~/components/shared'
 import AddCategoryForm from '~/routes/form/add-category-form'
 
 export function Menu() {
 
+  const { category } = useParams()
   const [show, setShow] = useState(false)
   const [modalContent, setModalContent] = useState(null)
 
@@ -23,13 +24,17 @@ export function Menu() {
   return (
     <>
       <div className="bg-stone-800 flex items-center justify-between py-5 px-10">
+        <div />
         <Link to='/'>
           <h1 className='text-white text 2xl'>DevBlog</h1>
         </Link>
 
         <div>
-          <ButtonPrimary onClick={addPost} className='bg-red-500'>Crear Post</ButtonPrimary>
-          <ButtonPrimary onClick={addCategory} className='bg-slate-500'>Crear Categoría</ButtonPrimary>
+          {category ? (
+            <ButtonPrimary onClick={addPost} className='bg-red-500'>Crear Post</ButtonPrimary>
+          ) : (
+            <ButtonPrimary onClick={addCategory} className='bg-slate-500'>Crear Categoría</ButtonPrimary>
+          )}
         </div>
       </div>
 
