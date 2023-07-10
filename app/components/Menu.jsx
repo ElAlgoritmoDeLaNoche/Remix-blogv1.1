@@ -29,7 +29,7 @@ export function Menu() {
 
         <div>
           <ButtonPrimary onClick={addPost} className='bg-red-500'>Crear Post</ButtonPrimary>
-          <ButtonPrimary onClick={addCategory}>Crear Categoría</ButtonPrimary>
+          <ButtonPrimary onClick={addCategory} className='bg-slate-500'>Crear Categoría</ButtonPrimary>
         </div>
       </div>
 
