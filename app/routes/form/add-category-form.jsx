@@ -13,7 +13,7 @@ export default function AddCategoryForm() {
       <Input name='title' placeholder='Titulo' className='my-2' />
       <Input name='slug' placeholder='Slug' />
 
-      <ButtonPrimary type='submit' className='mt-3 ml-0 bg-slate-500'>
+      <ButtonPrimary type='submit' className='mt-3 bg-slate-500'>
         Crear Categoría
       </ButtonPrimary>
     </Form>
