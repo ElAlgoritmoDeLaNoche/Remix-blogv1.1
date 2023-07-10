@@ -1,5 +1,4 @@
-___
-  title: Gatsby
-  slug: gatsby-js
-___
-  
+---
+title: Gatsby JS
+slug: gatsby-js
+---

@@ -1,5 +1,4 @@
-___
-  title: Remix JS
-  slug: remix-js
-___
-  
+---
+title: Remix JS
+slug: remix-js
+---

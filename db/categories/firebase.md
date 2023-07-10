@@ -1,5 +1,4 @@
-___
-  title: Firebase
-  slug: firebase
-___
-  
+---
+title: Firebase
+slug: firebase
+---
