@@ -1,5 +1,4 @@
-___
-  title: React JS
-  slug: react-js
-___
-  
+---
+title: React JS
+slug: react-js
+---
